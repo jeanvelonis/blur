@@ -1,15 +1,29 @@
+#0000
+#0100
+#0001
+#0000
+
+
+
 # This 2D array contains two sub-arrays.
-image = Array[[0,0,0,0], [0,1,0,0], [0,0,0,0], [0,0,0,0]]
+biggerArray = [[0,0,0,0], [0,1,0,0], [0,0,0,1], [0,0,0,0]]
 
 # Loop over each row array.
-image.each do |x|
+biggerArray.each_with_index do |smallerArray, biggerKey|
 
     # Loop over each cell in the row.
-    x.each_with_index do |value, index| 
-        print x[2-index]
-        print value
+    smallerArray.each_with_index do |valueS, key| 
+      #Check if the number equals 1
+      # if yes, get the key number
+      # Replace:
+      # Up   : tempArray, upper row, same currentColumn. 
+      # Left : tempArray, 
+        print valueS
     end
 
     # End of row.
     puts  ""
 end
+
+
+
