@@ -10,7 +10,7 @@ currentRow = 0
 currentColumn = 0
 
 biggerArray.each { |finalRow|
-   puts finalRow.join(” “)
+   puts finalRow.join( )
 }
 
 # Loop over each row array.
@@ -65,7 +65,7 @@ tempArray.each_with_index do |smallerArray, biggerKey|
 
 end
 
-puts ” ------ ”
+puts " "
 tempArray.each { |finalRow|
-   puts finalRow.join(” “)
+   puts finalRow.join( )
 }
